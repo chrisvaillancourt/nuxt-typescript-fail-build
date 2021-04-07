@@ -17,4 +17,8 @@ $ npm run start
 $ npm run generate
 ```
 
-For detailed explanation on how things work, check out [Nuxt.js docs](https://nuxtjs.org).
+## Build Errors
+
+This project simultaneously builds and reports errors during local development. Running `npm run build`, results with `FATAL Nuxt build error` due to TypeScript errors reported by ESLint (see `~/components/TsSFC.vue`).
+
+It would be ideal if there was an option to allow production builds with TypeScript errors.
